@@ -1,0 +1,116 @@
+com.alarmclocksnoozers.highscore.DBManager:
+    private static final java.lang.String DATABASE_NAME
+    private static final int DATABASE_VERSION
+    private static final java.lang.String DB_CREATE_HIGHSCORE
+com.alarmclocksnoozers.highscore.HighscoreAdapter:
+    private static final java.lang.String DATABASE_TABLE
+    public static final java.lang.String KEY_ROWID
+    public static final java.lang.String KEY_NAME
+    public static final java.lang.String KEY_SCORE
+    public static final java.lang.String KEY_ISONLINE
+    50:54:public boolean updateScore(long,int)
+    60:60:public boolean delete(long)
+    66:66:public boolean clear()
+    98:106:public android.database.Cursor fetchSingleScore(long)
+    112:120:public android.database.Cursor getHighscore(long)
+com.alarmclocksnoozers.runnershigh.BuildConfig
+com.alarmclocksnoozers.runnershigh.Button:
+    29:29:public int getWidth()
+    32:32:public int getHeight()
+    35:35:public int getX()
+    38:38:public int getY()
+com.alarmclocksnoozers.runnershigh.CounterDigit:
+    40:46:public void setWidth(int)
+    50:55:public void setHeight(int)
+    57:67:public void incrementDigit()
+com.alarmclocksnoozers.runnershigh.CounterGroup:
+    49:50:public void add(int,com.alarmclocksnoozers.runnershigh.CounterDigit)
+    66:67:public void clear()
+    75:75:public com.alarmclocksnoozers.runnershigh.Mesh get(int)
+    84:84:public com.alarmclocksnoozers.runnershigh.Mesh remove(int)
+    93:93:public boolean remove(java.lang.Object)
+    101:101:public int size()
+com.alarmclocksnoozers.runnershigh.Group:
+    56:57:public void add(int,com.alarmclocksnoozers.runnershigh.Mesh)
+    73:74:public void clear()
+    82:82:public com.alarmclocksnoozers.runnershigh.Mesh get(int)
+    91:91:public com.alarmclocksnoozers.runnershigh.Mesh remove(int)
+    108:108:public int size()
+com.alarmclocksnoozers.runnershigh.HighScoreActivity:
+    private static final java.lang.String POST_HIGHSCORE_URL
+    private static final java.lang.String GET_HIGHSCORE_URL
+com.alarmclocksnoozers.runnershigh.HighscoreMark:
+    private com.alarmclocksnoozers.runnershigh.OpenGLRenderer mRenderer
+    private com.alarmclocksnoozers.runnershigh.CounterDigit mHighscoreDigit1
+    private com.alarmclocksnoozers.runnershigh.CounterDigit mHighscoreDigit2
+    private com.alarmclocksnoozers.runnershigh.CounterDigit mHighscoreDigit3
+    private com.alarmclocksnoozers.runnershigh.CounterDigit mHighscoreDigit4
+    private com.alarmclocksnoozers.runnershigh.CounterDigit mHighscoreId
+    private com.alarmclocksnoozers.runnershigh.CounterGroup mHighscoreGroup
+    private com.alarmclocksnoozers.runnershigh.RHDrawable mHighscoreMark
+    21:56:public HighscoreMark(com.alarmclocksnoozers.runnershigh.OpenGLRenderer,android.graphics.Bitmap,android.graphics.Bitmap)
+    60:66:public void setMarkTo(int,int)
+com.alarmclocksnoozers.runnershigh.Level:
+    public static final int maxBlocks
+    public static final int maxObstaclesSlower
+    public static final int maxObstaclesJumper
+    public static final int maxObstaclesBonus
+    android.graphics.Rect blockRect
+com.alarmclocksnoozers.runnershigh.Menu:
+    android.media.MediaPlayer menuLoop
+com.alarmclocksnoozers.runnershigh.Mesh:
+    222:227:protected void setColors(float[])
+com.alarmclocksnoozers.runnershigh.Obstacle:
+    46:47:public void setObstacleRectRight(int)
+    50:52:public void updateObstacleRect(int)
+    54:59:public boolean isClicked(float,float)
+com.alarmclocksnoozers.runnershigh.ObstacleBonus:
+    public char ObstacleType
+com.alarmclocksnoozers.runnershigh.ObstacleJump:
+    public android.graphics.Bitmap jumpSpriteImg
+com.alarmclocksnoozers.runnershigh.R
+com.alarmclocksnoozers.runnershigh.R$attr
+com.alarmclocksnoozers.runnershigh.R$drawable
+com.alarmclocksnoozers.runnershigh.R$id
+com.alarmclocksnoozers.runnershigh.R$layout
+com.alarmclocksnoozers.runnershigh.R$raw
+com.alarmclocksnoozers.runnershigh.R$string
+com.alarmclocksnoozers.runnershigh.Settings:
+    static final java.lang.String LOG_TAG
+    static final java.lang.String URL_RUNNERSHIGH
+    static final java.lang.String HIGHSCORE_GET_URL
+    static final java.lang.String HIGHSCORE_POST_URL
+    static final java.lang.String URL_ANDRE
+    static final java.lang.String URL_ANDREAS
+    static final java.lang.String URL_CHRIS
+    static final java.lang.String URL_FRANCOIS
+    static final java.lang.String URL_HANS
+    static final java.lang.String URL_MANUEL
+    static final java.lang.String URL_STEVE
+    static final java.lang.String URL_WEBI
+    static final java.lang.String URL_FH
+    static final java.lang.String URL_MMA
+    static final java.lang.String URL_MMT
+    static final java.lang.String URL_SONY
+    static final boolean RHDEBUG
+    static final boolean showHighscoreMarks
+    static final int TimeForLoadingScreenToBeVisible
+    static final int TimeOfFirstSpeedIncrease
+    static final int timeToFurtherSpeedIncreaseMillis
+    static final int timeUntilLongBlocksStopMillis
+    static final int onlineHighscoreLimit
+    static final java.lang.String URL_DONATE
+    9:9:public Settings()
+com.alarmclocksnoozers.runnershigh.SoundManager:
+    56:57:public static void addSound(int,int)
+    103:104:public static void stopSound(int)
+com.alarmclocksnoozers.runnershigh.Sprite:
+    48:54:public void setWidth(int)
+    58:63:public void setHeight(int)
+com.alarmclocksnoozers.runnershigh.main:
+    private static final int MIN_CREATION_TIMEOUT
+    private static final int SLEEP_TIME
+com.alarmclocksnoozers.runnershigh.main$RunnersHighView:
+    500:509:public int getHighscore(long)
+    703:749:private void initHighscoreMarks()
+    753:815:private void updateHighscoreMarks()
